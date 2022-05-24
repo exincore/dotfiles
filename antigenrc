@@ -1,0 +1,27 @@
+# Use oh-my-zsh
+antigen use oh-my-zsh
+
+# Select theme
+antigen theme romkatv/powerlevel10k
+
+# Load bundles from oh-my-zsh
+antigen bundle git
+antigen bundle dirhistory
+antigen bundle sudo
+antigen bundle copypath
+antigen bundle copyfile
+antigen bundle history
+antigen bundle ansible
+
+# Load bundles from external repos
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle tjquillan/zsh-pipenv
+antigen bundle lukechilds/zsh-nvm
+export NVM_LAZY_LOAD=true
+
+# (this must be last)
+antigen bundle zsh-users/zsh-syntax-highlighting 
+
+# Apply
+antigen apply

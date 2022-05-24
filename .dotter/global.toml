@@ -1,0 +1,16 @@
+
+[helpers]
+
+[default]
+depends = []
+
+[zsh.files]
+"zshrc" = "~/.zshrc"
+#"antigen.zsh" = "~/.antigen.zsh"
+"antigenrc" = "~/.antigenrc"
+"p10k.zsh" = "~/.p10k.zsh"
+
+[kitty.files]
+"kitty.conf" = "~/.config/kitty/kitty.conf"
+
+[default.variables]
