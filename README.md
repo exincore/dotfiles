@@ -1,9 +1,11 @@
 # exin's dotfiles
 
-### zsh
-zshrc, antigenrc, p10k.zsh
+Use [SuperCuber/dotter](https://github.com/SuperCuber/dotter) to deploy.
 
-dependencies: "~/.antigen.zsh"
+### zsh
+starship prompt, various plugins including from oh-my-zsh
+
+dependencies: "zinit"
 
 ### kitty
 kitty
