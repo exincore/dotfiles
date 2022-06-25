@@ -10,4 +10,9 @@ dependencies: "zinit"
 ### kitty
 kitty
 
-dependencies: "Fira Code Nerd Font"
+dependencies: "JetBrainsMono Nerd Font"
+
+### fish
+fish
+
+must install `jorgebucaran/fisher`, `PatrickF1/fzf.fish`
