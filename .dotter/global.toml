@@ -5,10 +5,10 @@
 depends = []
 
 [zsh.files]
-"zshrc" = "~/.zshrc"
+"zsh/zshrc" = "~/.zshrc"
 
 [starship.files]
-"starship.toml" = "~/.config/starship.toml"
+"starship/starship.toml" = "~/.config/starship.toml"
 
 [kitty.files]
 "kitty" = "~/.config/kitty"
