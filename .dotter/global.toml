@@ -6,9 +6,14 @@ depends = []
 
 [zsh.files]
 "zshrc" = "~/.zshrc"
+
+[starship.files]
 "starship.toml" = "~/.config/starship.toml"
 
 [kitty.files]
-"kitty.conf" = "~/.config/kitty/kitty.conf"
+"kitty" = "~/.config/kitty"
+
+[fish.files]
+"fish" = "~/.config/fish"
 
 [default.variables]

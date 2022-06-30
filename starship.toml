@@ -1,27 +1,137 @@
 format = """
 $all\
-$time\
 $line_break\
+$os\
+$shlvl\
+$shell\
 $character\
 """
 
+right_format = """
+$status\
+$cmd_duration\
+$time\
+"""
+
 #home = " "
-#timer = " "
-#clock = " "
+#eth = " "
+
+[directory]
+format = """
+[]($style)\
+[$path](inverted $style)\
+[]($style) \
+"""
+
+read_only = " "
+home_symbol = "~"
+#truncation_symbol = ""
+
+
+#[directory.substitutions]
+#"Documents" = " "
+#"Downloads" = " "
+#"Music" = " "
+#"Pictures" = " "
+
+[shlvl]
+format = "[$symbol]($style)"
+symbol = "•"
+repeat = true
+style = "bold white"
+disabled = false
+
+[username]
+format = "[ $user]($style) "
+style_user = "bold blue"
+#show_always = true
+
+[hostname]
+format = "[ $hostname]($style) "
+style = "bold blue"
+#ssh_only = false
 
 [fill]
 symbol = " "
 
-[status]
+[git_branch]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$branch]($style)\
+"""
+symbol = " "
+
+[git_status]
+format = """
+([](inverted $style)\
+[$all_status$ahead_behind](inverted $style)\
+[]($style)) \
+"""
+style = "bold purple"
+
+[shell]
+fish_indicator = ""
 disabled = false
+
+[package]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
+symbol = " "
+
+#[]($style) \
+
+[python]
+symbol = " "
+
+[rust]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
+symbol = " "
 
 [cmd_duration]
-format = " [$duration]($style) "
+format = """
+[]($style)\
+[ $duration](inverted $style)\
+[]($style) \
+"""
 
 [time]
-format = " [$time]($style) "
+format = """
+[]($style)\
+[ $time](inverted $style)\
+[]($style)\
+"""
 disabled = false
 
-#[custom.distro_debian]
-#format = " "
+[os]
+disabled = false
 
+[character]
+disabled = true
+
+[battery]
+format = """
+[]($style)\
+[$symbol$percentage](inverted $style)\
+[]($style) \
+"""
+
+[status]
+format = """
+[]($style)\
+[$symbol$status](inverted $style)\
+[]($style) \
+"""
+disabled = false
