@@ -4,6 +4,9 @@
 [default]
 depends = []
 
+[zsh]
+depends = ["starship"]
+
 [zsh.files]
 "zsh/zshrc" = "~/.zshrc"
 
