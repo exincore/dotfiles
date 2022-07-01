@@ -3,19 +3,26 @@
 Use [SuperCuber/dotter](https://github.com/SuperCuber/dotter) to deploy.
 
 ### zsh
-starship prompt, various plugins including from oh-my-zsh
+for historic reference
 
-dependencies: "zinit"
+dependencies:
+- zsh
+- [zdharma-continuum/zinit](https://github.com/zdharma-continuum/zinit)
 
 ### kitty
-[kovidgoyal/kitty](https://github.com/kovidgoyal/kitty)
-
-dependencies: "JetBrainsMono Nerd Font"
+dependencies: 
+- [kovidgoyal/kitty](https://github.com/kovidgoyal/kitty)
+- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
 
 ### fish
-[fish-shell/fish-shell](https://github.com/fish-shell/fish-shell)
+dependencies:
+- [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell)
+- [jorgebucaran/fisher](https://github.com/jorgebucaran/fisher)
 
-must install `jorgebucaran/fisher`, `PatrickF1/fzf.fish`
+use `fisher update` to install configured plugins
+use `fisher list | fisher remove` to remove plugins and fisher
 
 ### starship
-[starship/starship](https://github.com/starship/starship)
+dependencies:
+- [starship/starship](https://github.com/starship/starship)
+- A terminal with Nerd Font
