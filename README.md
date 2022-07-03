@@ -19,7 +19,7 @@ dependencies:
 - [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell)
 - [jorgebucaran/fisher](https://github.com/jorgebucaran/fisher)
 
-use `fisher update` to install configured plugins
+use `fisher update` to install configured plugins  
 use `fisher list | fisher remove` to remove plugins and fisher
 
 ### starship

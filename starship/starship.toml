@@ -65,9 +65,7 @@ symbol = " "
 
 [git_status]
 format = """
-([](inverted $style)\
-[$all_status$ahead_behind](inverted $style)\
-[]($style)) \
+[$all_status$ahead_behind]($style) \
 """
 style = "bold purple"
 
@@ -84,8 +82,9 @@ format = """
 """
 version_format = "${raw}"
 symbol = " "
-
-#[]($style) \
+#style = "bold blue"
+#style = "211"
+style = "215"
 
 [python]
 symbol = " "
