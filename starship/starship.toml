@@ -13,33 +13,28 @@ $cmd_duration\
 $time\
 """
 
+#:
+#:  Line 1
+#:
+
 #home = " "
 #eth = " "
 
 [directory]
 format = """
 []($style)\
-[$path](inverted $style)\
+[$path$read_only](inverted $style)\
 []($style) \
 """
-
 read_only = " "
 home_symbol = "~"
 #truncation_symbol = ""
-
 
 #[directory.substitutions]
 #"Documents" = " "
 #"Downloads" = " "
 #"Music" = " "
 #"Pictures" = " "
-
-[shlvl]
-format = "[$symbol]($style)"
-symbol = "•"
-repeat = true
-style = "bold white"
-disabled = false
 
 [username]
 format = "[ $user]($style) "
@@ -50,9 +45,6 @@ style_user = "bold blue"
 format = "[ $hostname]($style) "
 style = "bold blue"
 #ssh_only = false
-
-[fill]
-symbol = " "
 
 [git_branch]
 format = """
@@ -69,10 +61,6 @@ format = """
 """
 style = "bold purple"
 
-[shell]
-fish_indicator = ""
-disabled = false
-
 [package]
 format = """
 []($style)\
@@ -87,6 +75,13 @@ symbol = " "
 style = "215"
 
 [python]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
 symbol = " "
 
 [rust]
@@ -98,6 +93,48 @@ format = """
 """
 version_format = "${raw}"
 symbol = " "
+
+[battery]
+format = """
+[]($style)\
+[$symbol$percentage](inverted $style)\
+[]($style) \
+"""
+
+#:
+#:  Line 2
+#:
+
+[os]
+disabled = false
+
+[shlvl]
+format = "[$symbol]($style)"
+# ≺ ≻ ⸱ ⋅ ꞏ • ◦
+symbol = "∿"
+repeat = true
+threshold = 1
+style = "white"
+disabled = false
+
+[shell]
+fish_indicator = ""
+disabled = false
+
+[character]
+disabled = true
+
+#:
+#:  Right Prompt
+#:
+
+[status]
+format = """
+[]($style)\
+[$symbol$status](inverted $style)\
+[]($style) \
+"""
+disabled = false
 
 [cmd_duration]
 format = """
@@ -111,26 +148,5 @@ format = """
 []($style)\
 [ $time](inverted $style)\
 []($style)\
-"""
-disabled = false
-
-[os]
-disabled = false
-
-[character]
-disabled = true
-
-[battery]
-format = """
-[]($style)\
-[$symbol$percentage](inverted $style)\
-[]($style) \
-"""
-
-[status]
-format = """
-[]($style)\
-[$symbol$status](inverted $style)\
-[]($style) \
 """
 disabled = false
