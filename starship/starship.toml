@@ -101,6 +101,15 @@ format = """
 []($style) \
 """
 
+[[battery.display]]
+threshold = 20
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+
 #:
 #:  Line 2
 #:
