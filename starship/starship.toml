@@ -53,7 +53,7 @@ format = """
 [](inverted $style)\
 [$branch]($style)\
 """
-symbol = " "
+symbol = " "
 
 [git_status]
 format = """
