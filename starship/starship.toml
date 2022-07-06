@@ -74,6 +74,15 @@ symbol = " "
 #style = "211"
 style = "215"
 
+[nodejs]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
+
 [python]
 format = """
 []($style)\
@@ -102,13 +111,12 @@ format = """
 """
 
 [[battery.display]]
-threshold = 20
-style = "bold yellow"
-
-[[battery.display]]
 threshold = 10
 style = "bold red"
 
+[[battery.display]]
+threshold = 20
+style = "bold yellow"
 
 #:
 #:  Line 2
@@ -116,6 +124,43 @@ style = "bold red"
 
 [os]
 disabled = false
+
+[os.symbols]
+"Alpine" = " "
+"Amazon" = " "
+"Android" = " "
+"Arch" = " "
+"CentOS" = " "
+"Debian" = " "
+"DragonFly" = " "
+"Emscripten" = " "
+"EndeavourOS" = " "
+"Fedora" = " "
+"FreeBSD" = " "
+"Gentoo" = " "
+"HardenedBSD" = "ﲊ "
+"Illumos" = " "
+"Linux" = " "
+"Macos" = " "
+"Manjaro" = " "
+"Mariner" = " "
+"MidnightBSD" = " "
+"Mint" = " "
+"NetBSD" = " "
+"NixOS" = " "
+"OpenBSD" = " "
+"openSUSE" = " "
+"OracleLinux" = " "
+"Pop" = " "
+"Raspbian" = " "
+"Redhat" = " "
+"RedHatEnterprise" = " "
+"Redox" = " "
+"Solus" = "ﴱ "
+"SUSE" = " "
+"Ubuntu" = " "
+"Unknown" = " "
+"Windows" = " "
 
 [shlvl]
 format = "[$symbol]($style)"
