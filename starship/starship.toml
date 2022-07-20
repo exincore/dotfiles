@@ -46,6 +46,15 @@ format = "[ $hostname]($style) "
 style = "bold blue"
 #ssh_only = false
 
+[container]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$name]($style) \
+"""
+symbol = "∈ "
+
 [git_branch]
 format = """
 []($style)\
