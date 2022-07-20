@@ -46,6 +46,15 @@ format = "[ $hostname]($style) "
 style = "bold blue"
 #ssh_only = false
 
+[c]
+format = """
+[]($style)\
+[$name ](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
+
 [container]
 format = """
 []($style)\
