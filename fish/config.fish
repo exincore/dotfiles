@@ -1,4 +1,8 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    ~/Documents/Repositories/starship/target/release/starship init fish | source
+    set -l STARSHIP ~/Documents/Repositories/starship/target
+    if test -e $STARSHIP/release/starship
+        $STARSHIP/release/starship init fish | source
+    else if command -sq starship
+        starship init fish | source
+    end
 end
