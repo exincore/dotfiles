@@ -79,6 +79,18 @@ format = """
 """
 style = "bold purple"
 
+[java]
+format = """
+[]($style)\
+[$symbol](inverted $style)\
+[](inverted $style)\
+[$version]($style) \
+"""
+version_format = "${raw}"
+symbol = " "
+#symbol = "☕"
+style = "#d75f70"
+
 [package]
 format = """
 []($style)\
@@ -88,6 +100,7 @@ format = """
 """
 version_format = "${raw}"
 symbol = " "
+#symbol = "📦"
 #style = "bold blue"
 #style = "211"
 style = "215"
@@ -120,6 +133,7 @@ format = """
 """
 version_format = "${raw}"
 symbol = " "
+#symbol = "🦀"
 
 [battery]
 format = """
