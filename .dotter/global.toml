@@ -13,6 +13,10 @@ depends = ["starship"]
 [starship.files]
 "starship/starship.toml" = "~/.config/starship.toml"
 
+[starship.variables]
+starship.executable = "starship"
+starship.use_experimental_config = false
+
 [kitty.files]
 "kitty" = "~/.config/kitty"
 

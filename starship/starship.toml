@@ -154,6 +154,7 @@ style = "bold yellow"
 #:  Line 2
 #:
 
+{{#if starship.use_experimental_config}}
 [os]
 disabled = false
 
@@ -194,6 +195,7 @@ Ubuntu = " "
 Unknown = " "
 Windows = " "
 
+{{/if}}
 [shlvl]
 format = "[$symbol]($style)"
 # ≺ ≻ ⸱ ⋅ ꞏ • ◦
