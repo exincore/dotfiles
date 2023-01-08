@@ -20,7 +20,16 @@ starship.use_experimental_config = false
 [kitty.files]
 "kitty" = "~/.config/kitty"
 
+[kitty.variables]
+kitty.font.family = "JetBrains Mono"
+kitty.font.bold = "auto"
+kitty.font.italic = "auto"
+kitty.font.bold_italic = "auto"
+
 [fish.files]
 "fish" = "~/.config/fish"
+
+[bash.files]
+"bash" = "~/"
 
 [default.variables]
