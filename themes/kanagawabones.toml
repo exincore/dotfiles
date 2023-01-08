@@ -1,0 +1,45 @@
+
+[palette.variables]
+# black
+palette.color0 = "#1F1F28"
+palette.color8 = "#3C3C51"
+# red
+palette.color1 = "#E46A78"
+palette.color9 = "#EC818C"
+# green
+palette.color2 = "#98BC6D"
+palette.color10 = "#9EC967"
+# yellow
+palette.color3 = "#E5C283"
+palette.color11 = "#F1C982"
+# blue
+palette.color4 = "#6C6FA3"
+palette.color12 = "#7782B5"
+# magenta
+palette.color5 = "#957FB8"
+palette.color13 = "#A98FD2"
+# cyan
+palette.color6 = "#7EB3C9"
+palette.color14 = "#7BC2DF"
+# white
+palette.color7 = "#DDD8BB"
+palette.color15 = "#A8A48D"
+
+# color7
+palette.foreground = "#DDD8BB"
+# color0
+palette.background = "#1F1F28"
+# color7
+palette.selection_foreground = "#DDD8BB"
+palette.selection_background = "#49473E"
+
+palette.cursor = "#E6E0C2"
+# background
+palette.cursor_text_color = "#1F1F28"
+
+# color7
+palette.active_tab_foreground = "#DDD8BB"
+palette.active_tab_background = "#614A82"
+# color7
+palette.inactive_tab_foreground = "#DDD8BB"
+palette.inactive_tab_background = "#363644"

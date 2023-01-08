@@ -17,6 +17,9 @@ depends = ["starship"]
 starship.executable = "starship"
 starship.use_experimental_config = false
 
+[kitty]
+depends = ["palette"]
+
 [kitty.files]
 "kitty" = "~/.config/kitty"
 
@@ -25,11 +28,14 @@ kitty.font.family = "JetBrains Mono"
 kitty.font.bold = "auto"
 kitty.font.italic = "auto"
 kitty.font.bold_italic = "auto"
+kitty.shell = "bash"
 
 [fish.files]
 "fish" = "~/.config/fish"
 
 [bash.files]
 "bash" = "~/"
+
+[palette]
 
 [default.variables]

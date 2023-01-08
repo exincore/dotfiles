@@ -4,3 +4,4 @@ packages = ["fish", "starship"]
 [files]
 
 [variables]
+kitty.shell = "fish"
