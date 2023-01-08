@@ -1,3 +1,6 @@
+#{{#if starship.use_experimental_config}}
+#{{/if}}
+
 format = """
 $all\
 $line_break\
@@ -154,7 +157,6 @@ style = "bold yellow"
 #:  Line 2
 #:
 
-{{#if starship.use_experimental_config}}
 [os]
 disabled = false
 
@@ -195,14 +197,13 @@ Ubuntu = " "
 Unknown = " "
 Windows = " "
 
-{{/if}}
 [shlvl]
 format = "[$symbol]($style)"
 # ≺ ≻ ⸱ ⋅ ꞏ • ◦
-symbol = "∿"
+symbol = "~"
 repeat = true
 threshold = 1
-style = "white"
+style = "bold white"
 disabled = false
 
 [shell]
