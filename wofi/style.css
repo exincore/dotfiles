@@ -18,7 +18,7 @@ flowboxchild {
 }
 
 #input {
-  background-color: {{palette.active_tab_background}};
+  background-color: {{palette.inactive_tab_background}};
   border: none;
   border-radius: 16px;
   color: {{palette.foreground}};
@@ -26,7 +26,7 @@ flowboxchild {
 }
 
 #inner-box {
-  background-color: {{palette.active_tab_background}};
+  background-color: {{palette.inactive_tab_background}};
   border: none;
   border-radius: 16px;
   margin: 5px;
