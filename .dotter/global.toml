@@ -1,6 +1,7 @@
 
 [helpers]
 "hex_to_rgb" = ".dotter/helpers/hex_to_rgb.rhai"
+"hex" = ".dotter/helpers/hex.rhai"
 
 [default]
 depends = []
