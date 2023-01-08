@@ -1,0 +1,25 @@
+;; Inspired by fufexan/dotfiles
+
+(defvar show_date false)
+
+(defwidget clock_module []
+  (eventbox
+    :onhover "${EWW_CMD} update show_date=true"
+    :onhoverlost "${EWW_CMD} update show_date=false"
+    (overlay
+      :class "module"
+      (box
+        :space-evenly false
+        (label
+          :text {time.hour}
+          :class "hour")
+        (label
+          :text ":")
+        (label
+          :text {time.minute}
+          :class "minute"))
+      (revealer
+        :reveal show_date
+        (label
+          :text {time.date}
+          :class "date")))))

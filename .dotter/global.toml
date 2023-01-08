@@ -50,4 +50,7 @@ hyprland.terminal = "kitty"
 [wofi.files]
 "wofi" = "~/.config/wofi"
 
+[eww.files]
+"eww" = "~/.config/eww"
+
 [default.variables]

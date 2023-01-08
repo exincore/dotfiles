@@ -1,0 +1,1 @@
+(defpoll time :interval "5s" `date +'{"date": "%m-%d", "hour": "%H", "minute": "%M", "day": "%A"}'`)

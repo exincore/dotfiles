@@ -1,0 +1,52 @@
+// ~/.config/eww/eww.scss
+// Inspired by saimoomedits/eww-widgets and fufexan/dotfiles
+
+@import 'css/palette';
+
+@mixin rounding {
+  border-radius: 16px;
+}
+
+@mixin window {
+  border: 1px solid $border;
+  box-shadow: 0 2px 3px $shadow;
+  margin: 5px 5px 10px;
+  @include rounding;
+}
+
+*{
+  all: unset;
+  transition: 200ms ease;
+  font-family: monospace;
+  font-family: Symbols Nerd Font;
+}
+
+.bar {
+  border-radius: 5px;
+  background-color: $background;
+  color: $foreground;
+
+  label {
+    font-size: 1.2rem;
+  }
+}
+
+.module {
+  margin: 0 5px;
+}
+
+.hour {
+  font-weight: bold;
+  padding-left: 5px;
+}
+.minute {
+  padding-right: .7rem;
+}
+.date {
+  background: $background;
+  color: $bright_red;
+
+  label {
+    font-size: 1.2rem;
+  }
+}
