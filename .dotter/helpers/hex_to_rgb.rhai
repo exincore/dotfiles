@@ -42,9 +42,8 @@ fn hexToNum(hex) {
 }
 
 let hex = params[0];
-if hex[0] == "#" {
-    hex = hex.sub_string(1);
-}
+hex.remove('#');
+hex.make_lower();
 
 if hex.len == 3 {
     hex = "" + hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
