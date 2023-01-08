@@ -40,7 +40,7 @@ kitty.shell = "bash"
 [palette]
 
 [hyprland.files]
-"hyprland" = "~/.config/hyprland"
+"hyprland" = "~/.config/hypr"
 
 [hyprland.variables]
 hyprland.launcher = "wofi"
