@@ -45,4 +45,7 @@ kitty.shell = "bash"
 hyprland.launcher = "wofi"
 hyprland.terminal = "kitty"
 
+[wofi.files]
+"wofi" = "~/.config/wofi"
+
 [default.variables]

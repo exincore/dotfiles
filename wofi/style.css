@@ -1,0 +1,51 @@
+# ~/.config/wofi/style.css
+# Inspired by fufexan/dotfiles
+
+window {
+  background: unset;
+}
+
+flowboxchild {
+  outline-width: 0;
+}
+
+#outer-box {
+  background: {{palette.background}};
+  border-radius: 24px;
+  box-shadow: 0 2px 3px black;
+  margin: 5px 5px 10px;
+  padding: 5px 5px 10px;
+}
+
+#input {
+  background-color: {{palette.active_tab_background}};
+  border: none;
+  border-radius: 16px;
+  color: {{palette.foreground}};
+  margin: 5px;
+}
+
+#inner-box {
+  background-color: {{palette.active_tab_background}};
+  border: none;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+#scroll {
+  border: none;
+  margin: 0px;
+}
+
+#text {
+  color: {{palette.foreground}};
+  margin: 5px;
+}
+
+#entry {
+  border-radius: 16px;
+}
+
+#entry:selected {
+  background-color: {{palette.selection_background}};
+}
