@@ -1,4 +1,4 @@
-# From SuperCuber/dotfiles
+// From SuperCuber/dotfiles
 
 fn reverse(string) {
     if string.len == 1 {
@@ -42,6 +42,10 @@ fn hexToNum(hex) {
 }
 
 let hex = params[0];
+if hex[0] == "#" {
+    hex = hex.sub_string(1);
+}
+
 if hex.len == 3 {
     hex = "" + hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
 }
