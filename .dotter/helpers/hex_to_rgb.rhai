@@ -52,4 +52,4 @@ if hex.len != 6 {
     throw "Input length must be 3 or 6"
 }
 
-"rgb(" + hexToNum(hex.sub_string(0, 2)) + ", " + hexToNum(hex.sub_string(2, 2)) + ", " + hexToNum(hex.sub_string(4, 2)) + ")"
+hexToNum(hex.sub_string(0, 2)) + hexToNum(hex.sub_string(2, 2)) + hexToNum(hex.sub_string(4, 2))
