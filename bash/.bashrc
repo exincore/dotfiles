@@ -26,6 +26,13 @@ fi
 
 unset rc
 
-{{#if dotter.packages.starship}}
-eval "$({{starship.executable}} init bash)"
-{{/if}}
+# Prompt
+if tty | grep -q "/dev/tty" ; then
+	# vconsole
+	:
+else
+	# terminal emulator
+	{{#if dotter.packages.starship}}
+	eval "$({{starship.executable}} init bash)"
+	{{/if}}
+fi
